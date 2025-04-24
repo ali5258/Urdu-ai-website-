@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>میری اردو AI ویب سائٹ</title>
+  <style>
+    body {
+      font-family: 'Noto Nastaliq Urdu', serif;
+      background: #f7f7f7;
+      direction: rtl;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px #aaa;
+    }
+    textarea {
+      width: 100%;
+      height: 120px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      background: #008cff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+    }
+    #output {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>اردو ٹیکسٹ سے آڈیو / تصویر بنائیں</h2>
+    <textarea id="inputText" placeholder="اردو متن لکھیں..."></textarea>
+    <br>
+    <button onclick="generateImage()">تصویر بنائیں</button>
+    <button onclick="generateAudio()">آڈیو بنائیں</button>
+    <div id="output"></div>
+  </div>
+
+  <script>
+    function generateImage() {
+      const text = document.getElementById("inputText").value;
+      alert("یہاں تصویر بنانے کی API لگے گی: " + text);
+    }
+
+    function generateAudio() {
+      const text = document.getElementById("inputText").value;
+      alert("یہاں آڈیو بنانے کی API لگے گی: " + text);
+    }
+  </script>
+</body>
+</html>
